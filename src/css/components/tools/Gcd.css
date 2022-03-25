@@ -1,0 +1,11 @@
+
+
+.number-input {
+    background-color: var(--dark-grey);
+    color: var(--orange-light);
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+    padding: 3px;
+    max-width: 70px;
+}

@@ -1,0 +1,60 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    width: var(--nav-width);
+    height: 100%;
+    padding: 20px;
+}
+
+header .logo {
+    color: var(--orange-light);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+nav {
+    margin-top: 50px;
+    counter-reset: item;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    gap: 25px;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 100%;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul li a:hover {
+    color: var(--orange-light);
+}
+
+nav ul li a::before {
+    counter-increment: item;
+    content: "0" counter(item) ".";
+    margin-right: 5px;
+    color: var(--light-grey);
+    text-align: right;
+}
+
+nav ul li a:hover:before {
+    color: var(--orange);
+}
+
+

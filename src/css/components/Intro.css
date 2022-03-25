@@ -1,0 +1,12 @@
+.intro h1 {
+    font-size: 2.8em;
+}
+
+.intro p {
+    font-family: var(--font-sans);
+    font-size: 1.1em;
+    margin-top: 40px;
+    text-align: justify;
+    max-width: 650px;
+}
+

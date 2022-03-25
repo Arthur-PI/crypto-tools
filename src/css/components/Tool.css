@@ -1,0 +1,51 @@
+.tool {
+    width: 95%;
+    margin: auto;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition-slow);
+}
+
+.active {
+    width: 100%;
+}
+
+.tool .banner {
+    padding: 15px 20px;
+    background-color: var(--dark-grey);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.tool .banner:hover {
+    background-color: var(--light-navy);
+}
+
+.active .banner {
+    background-color: var(--light-navy);
+}
+
+.active .banner svg {
+    transform: rotate(180deg);
+}
+
+.banner svg {
+    color: var(--orange-light);
+    transform: rotate(90deg);
+    width: 15px;
+    transition: var(--transition-slow);
+}
+
+.tool .banner h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: var(--font-sans);
+    margin-left: 20px;
+}
+
+.tool .tool-content {
+    padding: 25px;
+    font-family: var(--font-sans);
+    background-color: rgba(255, 255, 255, .01);
+}
